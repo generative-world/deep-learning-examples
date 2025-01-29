@@ -91,25 +91,24 @@ The project is organized as follows:
 
 ```
 deep-learning-examples/
-├── neural_network/                        # Neural Network models (Feedforward and Multi-output models)
-│   ├── data/                              # Dataset files for neural network
-│   ├── models/                             # Neural network model files
-│   │   ├── basic_nn.py                    # Basic Neural Network using Keras Sequential API
-│   │   ├── functional_nn.py               # Neural Network using Keras Functional API
-│   │   └── model_subclassing.py          # Model with multiple outputs
-│   └── notebooks/                         # Colab notebooks for neural networks
-│       ├── nn_sequential.ipynb            # Colab notebook for Sequential Model
-│       ├── nn_functional.ipynb            # Colab notebook for Functional Model
-│       └── model_subclassing.ipynb        # Colab notebook for Model Subclassing
-├── cnn/                                   # CNN models for image classification
-│   ├── data/                              # Dataset files for CNN (e.g., Horse vs Human dataset)
-│   ├── models/                             # CNN model file
-│   │   └── cnn_model.py                   # CNN model for Horse vs Human classification
-│   └── notebooks/                         # Colab notebooks for CNN models
-│       └── cnn_horse_human.ipynb          # Colab notebook for CNN model on Horse vs Human dataset
-├── requirements.txt                       # Python dependencies (for local setup)
-├── README.md                              # Project overview and instructions
-└── .gitignore                             # List of files/folders to be ignored by git
+├── neural_network/                                  # Neural Network models (Feedforward and Multi-output models)
+│   ├── data/                                        # Dataset files for neural network
+│   ├── models/                                      # Neural network model files
+│   │   └── model_subclassing.py                     # Model with multiple outputs
+│   └── notebooks/                                   # Colab notebooks for neural networks
+│       ├── nn_sequential.ipynb                      # Colab notebook for Sequential Model
+│       ├── nn_functional.ipynb                      # Colab notebook for Functional Model
+│       ├── nn_functional_multiple_output.ipynb      # Colab notebook for Functional Model with two outputs
+│       └── nn_model_subclassing.ipynb               # Colab notebook for Model Subclassing
+├── cnn/                                             # CNN models for image classification
+│   ├── data/                                        # Dataset files for CNN (e.g., Horse vs Human dataset)
+│   ├── models/                                      # CNN model file
+│   │   └── cnn_model.py                             # CNN model for Horse vs Human classification
+│   └── notebooks/                                   # Colab notebooks for CNN models
+│       └── cnn_horse_human.ipynb                    # Colab notebook for CNN model on Horse vs Human dataset
+├── requirements.txt                                 # Python dependencies (for local setup)
+├── README.md                                        # Project overview and instructions
+└── .gitignore                                       # List of files/folders to be ignored by git
 
 
 ```
