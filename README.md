@@ -8,7 +8,7 @@ This repository contains deep learning examples using **TensorFlow** and **Keras
 - [Neural Network Examples](#neural-network-examples)
   - [Basic Neural Network (Sequential API)](#basic-neural-network-sequential-api)
   - [Neural Network using Keras Functional API](#neural-network-using-keras-functional-api)
-  - [Multiple Output Model](#multiple-output-model)
+  - [Model Subclassing](#model-subclassing)
 - [Convolutional Neural Network (CNN)](#convolutional-neural-network-cnn)
   - [CNN on Horse vs Human Dataset](#cnn-on-horse-vs-human-dataset)
 - [Evaluation and Predictions](#evaluation-and-predictions)
@@ -40,13 +40,16 @@ In this example, a more complex neural network is built using the **Keras Functi
 
 This approach is useful when building models that require shared layers or non-linear architectures. The model is then trained and evaluated on the same Iris dataset, with a more modular and flexible approach.
 
-### Multiple Output Model
+### Model Subclassing
 
-This example demonstrates how to define a neural network with multiple outputs, where one output is for classification and another is for regression.
+In this example, you will learn how to build a custom model using the **Keras Subclassing API**. This method allows you to define a model by subclassing the `tf.keras.Model` class and implementing the `__init__` and `call` methods to define the model’s architecture and forward pass.
 
-- The model is designed with two separate output layers: one for multi-class classification (using softmax) and another for a continuous value regression (using linear activation).
-- Both outputs are trained simultaneously with different loss functions and metrics.
-- This is useful for problems where multiple types of predictions need to be made from the same model.
+Model subclassing is particularly useful when your model needs custom behaviors that cannot be easily achieved with the Sequential or Functional APIs. In this example, you will:
+
+- Define a custom neural network by subclassing `tf.keras.Model`.
+- Implement the forward pass (in the `call` method) for a simple fully connected neural network.
+- Train and evaluate the model on the Iris dataset.
+
 
 ## Convolutional Neural Network (CNN)
 
@@ -79,11 +82,11 @@ deep-learning-examples/
 │   ├── models/                             # Neural network model files
 │   │   ├── basic_nn.py                    # Basic Neural Network using Keras Sequential API
 │   │   ├── functional_nn.py               # Neural Network using Keras Functional API
-│   │   └── multiple_output_nn.py          # Model with multiple outputs
+│   │   └── model_subclassing.py          # Model with multiple outputs
 │   └── notebooks/                         # Colab notebooks for neural networks
 │       ├── nn_sequential.ipynb            # Colab notebook for Sequential Model
 │       ├── nn_functional.ipynb            # Colab notebook for Functional Model
-│       └── multiple_output_model.ipynb    # Colab notebook for Multiple Output Model
+│       └── model_subclassing.ipynb        # Colab notebook for Model Subclassing
 ├── cnn/                                   # CNN models for image classification
 │   ├── data/                              # Dataset files for CNN (e.g., Horse vs Human dataset)
 │   ├── models/                             # CNN model file
@@ -93,6 +96,8 @@ deep-learning-examples/
 ├── requirements.txt                       # Python dependencies (for local setup)
 ├── README.md                              # Project overview and instructions
 └── .gitignore                             # List of files/folders to be ignored by git
+
+
 ```
 
 
