@@ -14,6 +14,7 @@ This repository contains deep learning examples using **TensorFlow** and **Keras
 - [Evaluation and Predictions](#evaluation-and-predictions)
 - [Activation Functions](#activation-functions)
 - [Loss Functions](#loss-functions)
+- [Keras Layers](#keras-layers)
 - [Project Structure](#project-structure)
 
 
@@ -84,6 +85,21 @@ Choosing the right loss function is crucial for training a deep learning model, 
 - **Categorical Crossentropy:** Used for multi-class classification tasks (e.g., classifying an image into one of several categories). The categorical crossentropy loss function compares the predicted probability distribution with the true class label, which is usually one-hot encoded.
 - **Mean Squared Error(MSE)** Used for regression tasks, where the goal is to predict continuous values (e.g., predicting the price of a house). MSE measures the average of the squared differences between predicted values and actual values.
 
+## Keras Layers
+
+This is a quick reference summary for common Keras layers used in deep learning models.
+
+| **Layer**       | **Purpose**                                                                                  | **Common Parameters**                                           |
+|-----------------|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
+| `Dense`         | Fully connected layer; used for classification, regression, and hidden layers.               | `units`, `activation`, `input_dim`                              |
+| `Input`         | Defines the input shape for the model (used in functional API).                              | `shape` (input shape, excluding batch size)                     |
+| `Dropout`       | Regularization technique to prevent overfitting by randomly setting input units to 0.        | `rate` (fraction of input units to drop)                        |
+| `Flatten`       | Converts multi-dimensional data to a 1D vector, often used after convolution layers.         | None                                                            |
+| `Conv2D`        | Performs 2D convolution, used for image processing tasks like classification and detection.  | `filters`, `kernel_size`, `activation`, `input_shape`           |
+| `MaxPooling2D`  | Reduces the spatial dimensions of the input by applying max pooling.                         | `pool_size` (height, width)                                     |
+
+
+
 
 ## Project Structure
 
@@ -112,5 +128,7 @@ deep-learning-examples/
 
 
 ```
+
+
 
 
