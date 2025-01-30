@@ -73,17 +73,17 @@ Steps include:
 - Making predictions for new inputs and interpreting the results, including classification labels and regression outputs.
 
 ## Activation Functions
-Activation functions are essential for introducing non-linearity into neural networks, enabling them to learn complex patterns. Depending on the type of task, different activation functions are used in the output layer:
-- **Sigmoid:** The sigmoid activation function is typically used in binary classification tasks. It maps outputs to a range between 0 and 1, which can be interpreted as the probability of one class. It's commonly used in the output layer when there are only two possible classes.
-- **Softmax:** The softmax activation function is used in multi-class classification problems. It converts raw output values (logits) into a probability distribution, where each class has a probability between 0 and 1, and the sum of all probabilities equals 1. It is commonly used in the output layer for classification tasks with more than two classes.
-- **Linear:** The linear activation function is used for regression tasks, where the output is a continuous value. It outputs real-valued numbers without any transformation, making it suitable for predicting quantities like price, temperature, etc.
-- **ReLu(Rectified Linear Unit):** ReLU is one of the most widely used activation functions in hidden layers of deep networks. It outputs the input directly if it is positive; otherwise, it returns zero.
+Activation functions are **essential for introducing non-linearity into neural networks**, enabling them to learn complex patterns. Depending on the type of task, different activation functions are used in the output layer:
+- **Sigmoid:** The sigmoid activation function is typically **used in binary classification tasks**. It **maps outputs to a range between 0 and 1**, which can be interpreted as the probability of one class. It's `commonly used in the output layer when there are only two possible classes`.
+- **Softmax:** The softmax activation function is **used in multi-class classification problems**. It converts raw output values (logits) into a probability distribution, where each class has a probability between 0 and 1, and the sum of all probabilities equals 1. It is `commonly used in the output layer for classification tasks with more than two classes`.
+- **Linear:** The linear activation function is **used for regression tasks**, where the **output is a continuous value*. It outputs real-valued numbers without any transformation, making it `suitable for predicting quantities like price, temperature, etc`.
+- **ReLu(Rectified Linear Unit):** ReLU is one of the most widely used activation functions in **hidden layers of deep networks**. It `outputs the input directly if it is positive; otherwise, it returns zero`.
 
 ## Loss Functions
 Choosing the right loss function is crucial for training a deep learning model, as it determines how the model's predictions are evaluated during training. The loss function depends on the type of task:
-- **Binary Crossentropy:** Used for binary classification tasks (e.g., predicting whether an image is of a horse or human). The binary crossentropy loss function compares the predicted probability with the true binary label.
-- **Categorical Crossentropy:** Used for multi-class classification tasks (e.g., classifying an image into one of several categories). The categorical crossentropy loss function compares the predicted probability distribution with the true class label, which is usually one-hot encoded.
-- **Mean Squared Error(MSE)** Used for regression tasks, where the goal is to predict continuous values (e.g., predicting the price of a house). MSE measures the average of the squared differences between predicted values and actual values.
+- **Binary Crossentropy:** `Used for binary classification tasks` (e.g., predicting whether an image is of a horse or human). The binary crossentropy loss function compares the predicted probability with the true binary label.
+- **Categorical Crossentropy:** `Used for multi-class classification tasks` (e.g., classifying an image into one of several categories). The categorical crossentropy loss function compares the predicted probability distribution with the true class label, which is usually one-hot encoded.
+- **Mean Squared Error(MSE)** `Used for regression tasks`, where the goal is to predict continuous values (e.g., predicting the price of a house). MSE measures the average of the squared differences between predicted values and actual values.
 
 ## Keras Layers
 
